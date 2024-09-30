@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:id="@+id/tvTotalPlantas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Total de plantas: 0"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/etNomePlanta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome da planta" />
+
+    <EditText
+        android:id="@+id/etDataPlantio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data de plantio" />
+
+    <Spinner
+        android:id="@+id/spinnerNivelCuidado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAdicionarPlanta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Planta" />
+
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da planta"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDataPlantio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de plantio" />
+
+    <TextView
+        android:id="@+id/tvNivelCuidado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nível de cuidado" />
+
+
+</LinearLayout>
